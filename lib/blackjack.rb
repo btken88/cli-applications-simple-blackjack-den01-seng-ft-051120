@@ -47,10 +47,10 @@ def hit?(total)
     choice = get_user_input
   end
   if choice == 's'
-    return card_total
+    puts card_total
   elsif choice == 'h'
     card_total += deal_card
-    return card_total
+    puts card_total
   end
 end
 
