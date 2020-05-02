@@ -5,7 +5,6 @@ end
 
 def deal_card
   # code #deal_card here
-  puts "dealing card"
   card_number = rand(1..11)
 end
 
