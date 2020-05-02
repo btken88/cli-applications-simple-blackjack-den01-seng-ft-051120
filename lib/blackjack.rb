@@ -68,5 +68,6 @@ def runner
   welcome
   user_hand = initial_round
   prompt_user
-  hit_or_stay = ge
+  hit_or_stay = get_user_input
+  if hit_or_stay == 's'
 end
