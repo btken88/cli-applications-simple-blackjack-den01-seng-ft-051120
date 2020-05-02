@@ -48,6 +48,7 @@ def hit?(total)
   end
   if choice == 's'
     return card_total
+  end
   if choice == 'h'
     card_total += deal_card
     puts card_total
