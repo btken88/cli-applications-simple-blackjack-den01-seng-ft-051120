@@ -77,7 +77,8 @@ def runner
     end
   end
   if hit_or_stay == 'h'
-    user_hand += deal_card
+    new_card = deal_card
+    user_hand += new_card
     display_card_total(user_hand)
   end
   until user_hand > 21
