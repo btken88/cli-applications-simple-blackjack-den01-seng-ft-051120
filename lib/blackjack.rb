@@ -42,7 +42,7 @@ def hit?(total)
   # prompt user and store user's choice
   prompt_user
   choice = get_user_input
-  while choice != ('s' || 'h') do
+  until choice == 's' || choice == 'h' do
     invalid_command
     prompt_user
     choice = get_user_input
