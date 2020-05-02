@@ -68,7 +68,6 @@ end
 def runner
   welcome
   user_hand = initial_round
-  binding.pry
   prompt_user
   hit_or_stay = get_user_input
   if hit_or_stay == 's'
