@@ -47,8 +47,8 @@ def hit?(total)
     choice = get_user_input
   end
   if choice == 's'
-    puts card_total
-  elsif choice == 'h'
+    return card_total
+  if choice == 'h'
     card_total += deal_card
     puts card_total
   end
