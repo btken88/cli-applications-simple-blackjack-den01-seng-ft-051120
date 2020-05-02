@@ -21,7 +21,7 @@ end
 
 def get_user_input
   # code #get_user_input here
-  user_choice = get
+  user_choice = gets.chomp
   return user_choice
 end
 
@@ -43,7 +43,6 @@ def hit?(total)
   prompt_user
   choice = get_user_input
   until choice == ('h' || 's') do
-    binding.pry
     invalid_command
     prompt_user
     choice = get_user_input
