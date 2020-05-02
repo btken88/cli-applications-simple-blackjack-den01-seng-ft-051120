@@ -80,6 +80,8 @@ def runner
     user_hand += deal_card
     display_card_total(user_hand)
   end
-  
+  until user_hand > 21
     user_hand = hit?(user_hand)
+  end
+  end_game(user_hand)
 end
