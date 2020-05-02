@@ -67,4 +67,4 @@ def runner
   # code runner here
 end
 
-hit(10)
+hit?(10)
