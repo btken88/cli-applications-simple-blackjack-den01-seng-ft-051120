@@ -36,6 +36,7 @@ def initial_round
 end
 
 def hit?(total)
+  card_total = total
   # prompt user and store user's choice
   prompt_user
   choice = get_user_input
@@ -45,10 +46,10 @@ def hit?(total)
     choice = get_user_input
   end
   if choice == 's'
-    return total
+    return card_total
   elsif choice == 'h'
-    total += deal_card
-    return total
+    card_total += deal_card
+    return card_total
   end
 end
 
