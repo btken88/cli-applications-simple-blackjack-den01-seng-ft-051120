@@ -65,5 +65,8 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome
+  user_hand = initial_round
+  prompt_user
+  hit_or_stay = ge
 end
