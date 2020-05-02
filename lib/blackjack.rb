@@ -34,6 +34,7 @@ def initial_round
   hand = deal_card + deal_card
   # show user hand points
   display_card_total(hand)
+  return hand
 end
 
 def hit?(total)
