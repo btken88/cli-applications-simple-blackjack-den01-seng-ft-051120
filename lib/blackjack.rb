@@ -70,4 +70,16 @@ def runner
   prompt_user
   hit_or_stay = get_user_input
   if hit_or_stay == 's'
+    prompt_user
+    hit_or_stay = get_user_input
+    if hit_or_stay == 's'
+      return display_card_total(user_hand)
+    end
+  end
+  if hit_or_stay == 'h'
+    user_hand += deal_card
+    display_card_total(user_hand)
+  end
+  
+    user_hand = hit?(user_hand)
 end
