@@ -1,3 +1,4 @@
+require 'pry'
 def welcome
   # code #welcome here
   puts "Welcome to the Blackjack Table"
@@ -42,6 +43,7 @@ def hit?(total)
   prompt_user
   choice = get_user_input
   until choice == ('h' || 's') do
+    binding.pry
     invalid_command
     prompt_user
     choice = get_user_input
